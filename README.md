@@ -2,7 +2,7 @@
 
 A simple static front end for an animated, two-theme, neumorphic lead generation site, extracted from a larger containerized full stack project.
 
-The removal and modification of some features for the simpler static form may have left some discontinuities in the code. Most notably, the original contact form allowed messages to be sent through a Node.js server and a mailing list to be built in a PostgreSQL database. This backend functionality has been replaced with a use of a dynamic `mailto` and a use of the Clipboard API. Both recombine an address split in the JS to hinder scraping.
+The original contact form allowed messages to be sent through a Node.js server and a mailing list to be built in a PostgreSQL database. This backend functionality has been replaced with a use of a dynamic `mailto` and a use of the Clipboard API. Both recombine an address split in the JS to hinder scraping.
 
 ## Development plan
 
