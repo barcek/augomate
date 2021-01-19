@@ -26,11 +26,11 @@
     --splash-translucent: rgba(96, 255, 32, 0.25);
     --splash-opaque: rgb(200, 255, 176);
 
-    --plateau: rgba(96, 255, 32, 0.03);
+    --plateau: rgba(96, 255, 32, 0.01);
     --background: rgb(236, 255, 224);
 
     --highlight-light: rgba(232, 255, 224, 0.9);
-    --highlight-strong: rgba(248, 255, 244, 0.9);
+    --highlight-strong: rgba(228, 255, 224, 0.9);
     --shadow-light: rgba(216, 216, 216, 0.75);
     --shadow-strong: rgba(168, 192, 150, 0.75);
 
@@ -54,7 +54,7 @@
         --splash-translucent: rgba(0, 1, 0, 0.25);
         --splash-opaque: rgb(40, 54, 40);
 
-        --plateau: rgba(96, 168, 32, 0.05);
+        --plateau: rgba(96, 168, 32, 0.01);
         --background: rgb(56, 72, 56);
 
         --highlight-light: rgba(64, 88, 64, 0.9);
@@ -85,7 +85,7 @@ body.dark {
     --splash-translucent: rgba(0, 1, 0, 0.25);
     --splash-opaque: rgb(40, 54, 40);
 
-    --plateau: rgba(96, 168, 32, 0.05);
+    --plateau: rgba(96, 168, 32, 0.01);
     --background: rgb(56, 72, 56);
 
     --highlight-light: rgba(64, 88, 64, 0.9);
@@ -150,21 +150,20 @@ a {
 
 .splash {
     position: absolute;
-    left: -50vw;
-    width: 200vw;
+    left: 0vw;
+    width: 100%;
     background-color: var(--splash-translucent);
-    transform: rotate(-10deg);
+    transform: skew(0, -10deg);
 }
 
 .splash--top {
     top: -15vw;
     height: 60vw;
-    z-index: 1
+    z-index: 1;
 }
 
 .splash--bottom {
     height: 50vw;
-    z-index: -1;
 }
 
 /* Bars */
@@ -259,7 +258,7 @@ button {
 .btn--raised {
     background-color: var(--plateau);
     background-image: linear-gradient(-30deg, var(--splash-opaque), transparent);
-    box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-strong), -0.2rem -0.2rem 0.3rem var(--highlight-light);
+    box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-strong), -0.15rem -0.15rem 0.25rem var(--highlight-light);
 }
 
 .btn--raised:active {
@@ -270,6 +269,7 @@ button {
 /* Header */
 
 header {
+    width: 100%;
     height: 9rem;
     padding: 1.5rem;
     color: var(--grayscale-strong);
@@ -420,7 +420,7 @@ body.dark .theme__disc {
     position: relative;
     background-image: linear-gradient(-15deg, transparent, var(--plateau));
     border-radius: 0.5rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem var(--shadow-light), -0.3rem -0.3rem 0.5rem var(--highlight-strong);
+    box-shadow: 0.3rem 0.3rem 0.5rem var(--shadow-light), -0.2rem -0.2rem 0.35rem var(--highlight-strong);
     overflow: hidden;
 }
 
@@ -731,7 +731,7 @@ body.dark .theme__disc {
 	justify-content: center;
     position: relative;
     top: 4rem;
-    width: 100vw;
+    width: 100%;
     padding: 0 12vw;
     background-color: var(--splash-opaque);
     z-index: 1;
@@ -782,7 +782,7 @@ form .form--summary {
 
 footer {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 55vw;
     display: flex;
     align-items: center;
