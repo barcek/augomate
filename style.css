@@ -271,7 +271,7 @@ button {
 header {
     width: 100%;
     height: 9rem;
-    padding: 1.5rem;
+    padding: 1.65rem 1.5rem 1.5rem 1.5rem;
     color: var(--grayscale-strong);
 }
 
@@ -296,7 +296,7 @@ header {
 
 header > .outline {
     position: absolute;
-    top: 2rem;
+    top: 2.15rem;
     right: 1.2rem;
     z-index: 3;
 }
@@ -399,6 +399,24 @@ body.dark .theme__disc {
     transform: scale(0);
 }
 */
+
+/* Skip */
+
+.skip {
+    display: block;
+    position: absolute;
+    left: -7.5rem;
+    padding: 0.3rem 0 0 0.5rem;
+    font-size: 0.95rem;
+    color: var(--grayscale-light);
+    z-index: 1;
+    transition: 300ms;
+}
+
+.skip:focus {
+    left: 0;
+}
+
 /* Main */
 
 .intro, .tablet {
