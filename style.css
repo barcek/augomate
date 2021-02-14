@@ -34,9 +34,9 @@
     --shadow-light: rgba(216, 216, 216, 0.75);
     --shadow-strong: rgba(168, 192, 150, 0.75);
 
-    --accent-warm: rgb(216, 0, 96);
-    --accent-mid: purple;
-    --accent-cool: rgb(112, 0, 200);
+    --accent-warm: rgb(248, 0, 64);
+    --accent-mid: rgb(208, 0, 160);
+    --accent-cool: rgb(168, 0, 255);
 
     --grayscale-strong: #000;
     --grayscale-light: #222;
@@ -63,7 +63,7 @@
         --shadow-strong: rgba(8, 16, 8, 0.75);
 
         --accent-warm: rgb(216, 0, 96);
-        --accent-mid: rgb(168, 96, 192);
+        --accent-mid: rgb(182, 40, 172);
         --accent-cool: rgb(148, 80, 248);
 
         --grayscale-strong: #eee;
@@ -94,7 +94,7 @@ body.dark {
     --shadow-strong: rgba(18, 24, 18, 0.75);
 
     --accent-warm: rgb(216, 0, 96);
-    --accent-mid: rgb(168, 96, 192);
+    --accent-mid: rgb(182, 40, 172);
     --accent-cool: rgb(148, 80, 248);
 
     --grayscale-strong: #eee;
