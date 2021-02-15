@@ -1,6 +1,8 @@
-# augomate
+# [augomate](https://barcek.github.io/augomate/)
 
 A simple static front end for an animated, two-theme, neumorphic lead generation site, extracted from a larger containerized full stack project.
+
+It is currently hosted [here](https://barcek.github.io/augomate/).
 
 The original contact form allowed messages to be sent through a Node.js server and a mailing list to be built in a PostgreSQL database. This backend functionality has been replaced with a use of a dynamic `mailto` and a use of the Clipboard API. Both recombine an address split in the JS to hinder scraping.
 
