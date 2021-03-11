@@ -21,16 +21,16 @@
 
 :root {
 
-    --outline: rgb(32, 192, 16);
+    --outline: rgb(88, 192, 80);
 
     --splash-translucent: rgba(96, 255, 32, 0.25);
-    --splash-opaque: rgb(200, 255, 176);
+    --splash-opaque: rgb(208, 255, 192);
 
     --plateau: rgba(96, 255, 32, 0.01);
-    --background: rgb(236, 255, 224);
+    --background: rgb(248, 255, 248);
 
     --highlight-light: rgba(232, 255, 224, 0.9);
-    --highlight-strong: rgba(228, 255, 224, 0.9);
+    --highlight-strong: rgba(236, 255, 232, 0.9);
     --shadow-light: rgba(216, 216, 216, 0.75);
     --shadow-strong: rgba(168, 192, 150, 0.75);
 
@@ -38,8 +38,8 @@
     --accent-mid: rgb(208, 0, 160);
     --accent-cool: rgb(168, 0, 255);
 
-    --grayscale-strong: #000;
-    --grayscale-light: #222;
+    --grayscale-strong: #222;
+    --grayscale-light: #333;
 
 	--theme-other-primary: #979;
 	--theme-other-secondary: rgb(200, 255, 176);
@@ -52,7 +52,7 @@
         --outline: rgb(24, 144, 12);
 
         --splash-translucent: rgba(0, 1, 0, 0.25);
-        --splash-opaque: rgb(40, 54, 40);
+        --splash-opaque: rgb(42, 54, 42);
 
         --plateau: rgba(96, 168, 32, 0.01);
         --background: rgb(56, 72, 56);
@@ -83,7 +83,7 @@ body.dark {
     --outline: rgb(24, 144, 12);
 
     --splash-translucent: rgba(0, 1, 0, 0.25);
-    --splash-opaque: rgb(40, 54, 40);
+    --splash-opaque: rgb(42, 54, 42);
 
     --plateau: rgba(96, 168, 32, 0.01);
     --background: rgb(56, 72, 56);
@@ -97,8 +97,8 @@ body.dark {
     --accent-mid: rgb(182, 40, 172);
     --accent-cool: rgb(148, 80, 248);
 
-    --grayscale-strong: #eee;
-    --grayscale-light: #ddd;
+    --grayscale-strong: #ddd;
+    --grayscale-light: #ccc;
 
 	--theme-other-primary: rgb(255, 232, 48);
 	--theme-other-secondary: orange;
@@ -134,7 +134,7 @@ a {
     display: inline-block;
     padding: 0.25rem;
     border: 0.4rem solid transparent;
-    border-radius: 0.25rem;
+    border-radius: 0.75rem;
     transition: 200ms;
 }
 
@@ -325,7 +325,7 @@ header > .outline {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 1rem;
+    top: 1.25rem;
     right: 4.75rem;
     width: 17rem;
     padding: 1.35rem 0 1.35rem 0;
