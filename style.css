@@ -385,7 +385,7 @@ body.dark .theme__disc {
 .open {
     transform: translateX(0);
 }
-/*
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -398,7 +398,6 @@ body.dark .theme__disc {
     opacity: 0;
     transform: scale(0);
 }
-*/
 
 /* Skip */
 
