@@ -283,6 +283,28 @@ button {
     box-shadow: inset 0.2rem 0.2rem 0.5rem var(--shadow-strong), inset -0.2rem -0.2rem 0.5rem var(--highlight-light);
 }
 
+/* Skip */
+
+.skip {
+    display: block;
+    position: absolute;
+    left: -7.5rem;
+    padding: 0.3rem 0 0 0.5rem;
+    font-size: 0.95rem;
+    color: var(--grayscale-light);
+    z-index: 1;
+    transition: 300ms;
+}
+
+.skip:focus {
+    left: 0;
+}
+
+.skip:hover,
+.skip:focus {
+    text-decoration: none;
+}
+
 /* Header */
 
 header {
@@ -292,10 +314,30 @@ header {
     color: var(--grayscale-strong);
 }
 
+header .bar {
+    transition: 300ms ease;
+}
+
+header h1,
+header h2 {
+    transition: 300ms ease;
+}
+
+header a:hover,
+header a:focus {
+    text-decoration: none;
+}
+
+header a:hover .bar,
+header a:focus .bar {
+    background-color: var(--outline);
+}
+
 .title__frame {
     position: relative;
     padding: 0.15rem;
     color: var(--grayscale-strong);
+    text-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-strong);
     transition: 300ms;
     z-index: 2;
 }
@@ -361,6 +403,7 @@ header > .outline {
 
 .menu__list > .outline > a {
     color: inherit;
+    text-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-strong);
 }
 
 .menu__list > .outline:nth-of-type(odd) > a > .bar {
@@ -378,7 +421,7 @@ header > .outline {
 .theme__disc {
     width: 1.25rem;
     height: 1.25rem;
-    margin: 0.2rem 0.25rem 0.3rem 0.25rem;
+    margin: 0.15rem 0.25rem 0.35rem 0.25rem;
     background-image: linear-gradient(135deg, var(--theme-other-secondary) 20%, var(--theme-other-primary) 70%, var(--grayscale-strong));
     border-radius: 50%;
     box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-strong);
@@ -414,23 +457,6 @@ body.dark .theme__disc {
     overflow: hidden;
     opacity: 0;
     transform: scale(0);
-}
-
-/* Skip */
-
-.skip {
-    display: block;
-    position: absolute;
-    left: -7.5rem;
-    padding: 0.3rem 0 0 0.5rem;
-    font-size: 0.95rem;
-    color: var(--grayscale-light);
-    z-index: 1;
-    transition: 300ms;
-}
-
-.skip:focus {
-    left: 0;
 }
 
 /* Main */
@@ -475,6 +501,7 @@ body.dark .theme__disc {
     margin-top: 2rem;
     font-family: "Montserrat Subrayada", "Arial", sans-serif;
     font-size: 1.15rem;
+    text-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-light);
     text-align: center;
 }
 
