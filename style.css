@@ -21,7 +21,8 @@
 
 :root {
 
-    --outline: rgb(88, 192, 80);
+    --outline: rgb(112, 216, 80);
+    --highlighting: rgb(236, 255, 40);
 
     --splash-translucent: rgba(96, 255, 32, 0.25);
     --splash-opaque: rgb(208, 255, 192);
@@ -34,9 +35,9 @@
     --shadow-light: rgba(216, 216, 216, 0.75);
     --shadow-strong: rgba(168, 192, 150, 0.75);
 
-    --accent-warm: rgb(248, 0, 64);
-    --accent-mid: rgb(208, 0, 160);
-    --accent-cool: rgb(168, 0, 255);
+    --accent-warm: rgb(255, 16, 112);
+    --accent-mid: rgb(200, 32, 168);
+    --accent-cool: rgb(144, 48, 224);
 
     --grayscale-strong: #222;
     --grayscale-light: #333;
@@ -50,6 +51,7 @@
     :root {
 
         --outline: rgb(24, 144, 12);
+        --highlighting: transparent;
 
         --splash-translucent: rgba(0, 1, 0, 0.25);
         --splash-opaque: rgb(42, 54, 42);
@@ -81,6 +83,7 @@ html {
 body.dark {
 
     --outline: rgb(24, 144, 12);
+    --highlighting: transparent;
 
     --splash-translucent: rgba(0, 1, 0, 0.25);
     --splash-opaque: rgb(42, 54, 42);
@@ -245,6 +248,15 @@ a {
     80% { height: 0.3rem; }
     90% { height: 0.1rem; }
     100% { height: 1.5rem; }
+}
+
+/* Highlighting */
+
+mark {
+    padding: 0rem 0.25rem;
+    background-color: var(--highlighting);
+    color: inherit;
+    border-radius: 18% 12% 12% 8%;
 }
 
 /* Buttons */
