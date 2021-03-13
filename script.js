@@ -20,6 +20,7 @@
     // Form & form elements
 
     var formContact = doc.querySelector('#contact');
+    var formContactBtnShow = formContact.querySelector('#contact-show');
     var formContactBtnSend = formContact.querySelector('#contact-send');
     var formContactBtnCopy = formContact.querySelector('#contact-copy');
     var formContactSummary = formContact.querySelector('.form--summary');
@@ -328,6 +329,13 @@
 
     formContact.addEventListener('click', function(event) {
         event.preventDefault();
+        if (event.target.id === 'contact-show' && formContactBtnShow.disabled) {
+            return
+        } else if (event.target.id === 'contact-show') {
+            formContactBtnShow.disabled = true;
+            formContactBtnSend.disabled = false;
+            formContactBtnCopy.disabled = false;
+        };
         if (event.target.id == 'contact-send') {
             sendAddressToEmailClient();
         } else if (event.target.id == 'contact-copy') {
