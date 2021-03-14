@@ -287,8 +287,8 @@
     var addJoined = addSplit.reverse().join('@');
 
     var noteText = {
-        sendSuccess: 'Email client requested...',
-        copySuccess: 'Address sent to clipboard.',
+        sendSuccess: '<mark>Done.</mark>',
+        copySuccess: '<mark>Done.</mark>',
         copyFailure: 'Email: ' + addJoined
     };
 
@@ -296,14 +296,14 @@
 
     var showFormContactSummary = function(key) {
 
-        formContactSummary.textContent = noteText[key];
+        formContactSummary.innerHTML = noteText[key];
 
         // wait then remove ready for new
         clearTimeout(timer);
         timer = setTimeout(function() {
             formContactSummary.classList.add('transparent');
             setTimeout(function() {
-                formContactSummary.textContent = '';
+                formContactSummary.innerHTML = '';
                 formContactSummary.classList.remove('transparent');
             }, 300);
         }, 5000);
