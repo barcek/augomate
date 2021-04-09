@@ -266,6 +266,12 @@ mark {
     border-radius: 18% 12% 12% 8%;
 }
 
+@supports (box-decoration-break: clone) {
+    mark {
+        box-decoration-break: clone;
+    }
+}
+
 /* Buttons */
 
 button {
