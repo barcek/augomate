@@ -1025,7 +1025,11 @@ footer > p {
 
     header {
         height: 11rem;
-        padding: 1.5rem 6vw;
+        padding: 2.5rem 6vw;
+    }
+
+    .menu__list {
+        top: 2rem;
     }
 
     .intro, .tablet {
