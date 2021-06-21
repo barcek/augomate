@@ -335,6 +335,9 @@
             formContactBtnShow.disabled = true;
             formContactBtnSend.disabled = false;
             formContactBtnCopy.disabled = false;
+            setTimeout(function() {
+                formContactBtnSend.focus();
+            }, 500)
         };
         if (event.target.id == 'contact-send') {
             sendAddressToEmailClient();
