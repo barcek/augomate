@@ -203,8 +203,7 @@
         'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', // 10
         'u', 'v', 'w', 'x', 'y', 'z', // 6
         '!', '?', '&', '*', '~', '@', '#', '%', // 8
-        '&alpha;', // 31
-        '&euro;',
+        '&alpha;', // 30
         '&cent;',
         '&check;',
         '&copy;',
@@ -239,7 +238,7 @@
     var insertRemoveSymbol = function() {
 
         // create element w/ randomly determined text & properties, append
-        var entry = entries[generateRandomNumber(0, 84)];
+        var entry = entries[generateRandomNumber(0, 83)];
         var symbol = buildElementSimple('div', ['flow__symbol'], entry);
         symbol.style.fontSize = generateRandomNumber(2.25, 3.75) + 'rem';
         symbol.style.left = generateRandomNumber(5, 78) + '%';
