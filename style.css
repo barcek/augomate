@@ -190,13 +190,13 @@ a:focus {
 .bar--medium {
     width: 0.9rem;
     height: 1.2rem;
-    box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-strong);
+    box-shadow: 0.1rem 0.1rem 0.2rem var(--shadow-strong);
 }
 
 .bar--large {
     width: 1.05rem;
     height: 1.5rem;
-    box-shadow: 0.3rem 0.3rem 0.4rem var(--shadow-strong);
+    box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow-strong);
 }
 
 .bar--small:nth-of-type(odd),
