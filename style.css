@@ -51,7 +51,7 @@
   :root {
 
     --outline: rgb(24, 144, 12);
-    --highlighting: transparent;
+    --highlighting: rgb(140, 44, 0);
 
     --splash-translucent: rgba(0, 1, 0, 0.25);
     --splash-opaque: rgb(42, 54, 42);
@@ -83,7 +83,7 @@ html {
 body.dark {
 
   --outline: rgb(24, 144, 12);
-  --highlighting: transparent;
+  --highlighting: rgb(140, 44, 0);
 
   --splash-translucent: rgba(0, 1, 0, 0.25);
   --splash-opaque: rgb(42, 54, 42);
