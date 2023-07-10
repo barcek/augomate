@@ -215,34 +215,13 @@
     'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', // 10
     'u', 'v', 'w', 'x', 'y', 'z', // 6
     '!', '?', '&', '*', '~', '@', '#', '%', // 8
-    '&alpha;', // 30
-    '&cent;',
-    '&check;',
-    '&copy;',
-    '&cross;',
-    '&dollar;',
-    '&equiv;',
-    '&euro;',
-    '&frac14;',
-    '&frac13;',
-    '&frac12;',
-    '&frac23;',
-    '&frac34;',
-    '&lambda;',
-    '&micro;',
-    '&para;',
-    '&pi;',
-    '&pound;',
-    '&radic;',
-    '&reg;',
-    '&rtrif;',
-    '&sect;',
-    '&sigma;',
-    '&sum;',
+    '&alpha;', '&lambda;', '&micro;', '&pi;', '&sigma;', '&theta;', // 6
+    '&cent;', '&dollar;', '&euro;', '&pound;', '&yen;', // 5
+    '&check;', '&cross;', '&para;', '&rtrif;', '&sect;', // 5
+    '&copy;', '&reg;', '&trade;', // 3
+    '&equiv;', '&radic;', '&sum;', // 3
+    '&frac14;', '&frac13;', '&frac12;', '&frac23;', '&frac34;', // 5
     '&telrec;',
-    '&theta;',
-    '&trade;',
-    '&yen;',
     '&#8494;', // estimated
     '&#9685;'  // pie chart
   ];
