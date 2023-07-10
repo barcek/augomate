@@ -294,7 +294,7 @@
 
   // Form
 
-  var addSplit = ['gmx.com', 'automate'];
+  var addSplit = ['gmx.com', 'augomate'];
   var addJoined = addSplit.reverse().join('@');
 
   var noteText = {
